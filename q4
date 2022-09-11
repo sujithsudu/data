@@ -1,0 +1,5 @@
+import pandas as pd
+df = pd.read_csv("https://www.kaggle.com/datasets/melihkanbay/police?select=police.csv")
+percent_missing = df.isnull().sum() * 100 / len(df)
+missing_value_df = pd.DataFrame({'column_name': df.columns,
+                                 'percent_missing': percent_missing})
