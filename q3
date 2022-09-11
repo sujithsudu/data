@@ -1,1 +1,5 @@
 import pandas as pd
+df = pd.read_csv("https://www.kaggle.com/datasets/melihkanbay/police?select=police.csv")
+dataTypedf = df.dttypes
+print('Data type of each column of Dataframe :')
+print(dataTypedf)
