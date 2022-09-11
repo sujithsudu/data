@@ -1,1 +1,14 @@
+#first coloumn
 import panda as pd
+df = pd.read_csv("https://www.kaggle.com/datasets/melihkanbay/police?select=police.csv")
+mean = df['stop date'].mean()
+max = df['stop date'].max()
+print('mean stop date:'+str(mean))
+print('max stop date:'+str(max))
+
+#2nd coloumn
+df = pd.read_csv("https://www.kaggle.com/datasets/melihkanbay/police?select=police.csv")
+mean = df['stop time'].mean()
+max = df['stop time'].max()
+print('mean stop time:'+str(mean))
+print('max stop time:'+str(max))
