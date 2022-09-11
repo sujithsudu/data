@@ -1,0 +1,9 @@
+#print first five rows
+import pandas as pd
+df = pd.read_csv("https://www.kaggle.com/datasets/melihkanbay/police?select=police.csv")
+df.head(5)
+
+#print last five rows
+import pandas as pd
+df = pd.read_csv("https://www.kaggle.com/datasets/melihkanbay/police?select=police.csv")
+df.tail(5)
